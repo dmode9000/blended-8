@@ -133,11 +133,15 @@ header .container {
   background: #fff;
   border: 1px solid #bcd0e5;
   min-width: 105px;
+  font-weight: 600;
+  color: #173a56;
 }
 .sign-up-btn {
   background: #02897a;
   border: none;
   min-width: 113px;
+  color: #fff;
+  font-weight: 600;
 }
 
 /* #endregion: Header */
