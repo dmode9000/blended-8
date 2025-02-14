@@ -56,6 +56,10 @@ a {
   flex-direction: column;
   justify-content: center;
 }
+
+.bold {
+  font-weight: 600;
+}
 /* #endregion Global */
 
 /* #region: Header */
@@ -96,10 +100,6 @@ header .container {
   display: flex;
   align-items: center;
   gap: 30px;
-}
-
-.nav-list > li:first-child {
-  font-weight: 600;
 }
 
 .nav-list-link {

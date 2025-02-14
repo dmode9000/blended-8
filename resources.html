@@ -3,32 +3,183 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Resources</title>
+    <title>Resoures</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,700&family=Montserrat:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <!-- #region Header -->
     <header>
-      <a href="./index.html"
-        ><img src="./images/logo.png" alt="Logo P Product" /> Product</a
-      >
-      <nav>
-        <ul>
-          <li><a href="./product.html">Product</a></li>
-          <li><a href="./pricing.html">Pricing</a></li>
-          <li><a href="./customers.html">Customers</a></li>
-          <li><a href="./resources.html">Resources</a></li>
-        </ul>
-      </nav>
-      <ul>
-        <li><button type="button">Sign In</button></li>
-        <li><button type="button">Sign Up</button></li>
-      </ul>
+      <div class="container">
+        <a href="./index.html" class="top-logo-link">
+          <img
+            class="logo-image"
+            src="./images/logo.png"
+            alt="Logo P Product"
+            width="39"
+            height="36"
+          />
+          Product
+        </a>
+        <nav class="nav-block">
+          <ul class="nav-list">
+            <li><a class="nav-list-link" href="./index.html">Product</a></li>
+            <li>
+              <a class="nav-list-link" href="./pricing.html">Pricing</a>
+            </li>
+            <li>
+              <a class="nav-list-link" href="./customers.html">Customers</a>
+            </li>
+            <li>
+              <a class="nav-list-link bold" href="">Resources</a>
+            </li>
+          </ul>
+          <ul class="auth-list">
+            <li><button class="sign-in-btn" type="button">Sign In</button></li>
+            <li><button class="sign-up-btn" type="button">Sign Up</button></li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <!-- #endregion Header -->
     <!-- #region Main -->
     <main>
-      <section>Resources</section>
+      <!-- #region Product section-->
+      <section class="product-sect">
+        <div class="container">
+          <h2 class="product-title">Product was Built Specifically for You</h2>
+          <ul class="product-list">
+            <li>
+              <div class="rounded-rect firstclick">
+                <i class="fa-solid fa-arrow-pointer"></i>
+              </div>
+              <h3 class="prod-item-title">First click tests</h3>
+              <p class="prod-item-text">
+                While most people enjoy casino gambling,
+              </p>
+            </li>
+            <li>
+              <div class="rounded-rect design">
+                <i class="fa-solid fa-wave-square"></i>
+              </div>
+              <h3 class="prod-item-title">Design surveys</h3>
+              <p class="prod-item-text">
+                Sports betting, lottery and bingo playing for the fun
+              </p>
+            </li>
+            <li>
+              <div class="rounded-rect preference">
+                <i class="fa-solid fa-heart"></i>
+              </div>
+              <h3 class="prod-item-title">Preference tests</h3>
+              <p class="prod-item-text">
+                The Myspace page defines the individual.
+              </p>
+            </li>
+            <li>
+              <div class="rounded-rect fivesecond">
+                <i class="fa-regular fa-hourglass-half"></i>
+              </div>
+              <h3 class="prod-item-title">Five second tests</h3>
+              <p class="prod-item-text">
+                Personal choices and the overall personality of the person.
+              </p>
+            </li>
+          </ul>
+          <button class="prod-btn" type="button">SIGN UP NOW</button>
+        </div>
+      </section>
+      <!-- #endregion Product section-->
+
+      <!-- #region Promo Join100 -->
+      <section class="promo-sect">
+        <div class="container">
+          <div>
+            <h2 class="promo-sect-title">
+              Join 100 Compannies who boost their business with Product
+            </h2>
+            <button class="promo-sect-button" type="button">Get This</button>
+          </div>
+          <img src="./images/join-100.png" alt="Join image" />
+        </div>
+      </section>
+      <!-- #endregion Promo Join100 -->
     </main>
     <!-- #endregion Main -->
+
+    <!-- #region Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-horisontal-cont">
+          <div>
+            <div class="footer-logo-cont">
+              <img
+                class="footer-logo-image"
+                src="./images/logo.png"
+                alt="Logo"
+              />
+              <p class="footer-logo-text">Product</p>
+            </div>
+            <div class="footer-social-cont">
+              <div class="tick-rectangle orange"></div>
+              <div class="tick-rectangle orange"></div>
+              <div class="tick-rectangle orange"></div>
+            </div>
+          </div>
+          <div class="footer-elastic"></div>
+          <ul class="footer-nav-resurce">
+            <li><h3>Resource</h3></li>
+            <li><a href="">About Us</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="">FAQ</a></li>
+          </ul>
+          <ul class="footer-nav-legal">
+            <li><h3>Legal Stuff</h3></li>
+            <li><a href="">Disclaimer</a></li>
+            <li><a href="">Financing</a></li>
+            <li><a href="">Privacy Policy</a></li>
+          </ul>
+
+          <ul class="footer-contact">
+            <li>
+              <h3 class="footer-contact-title">
+                knowing you're always on the best energy deal.
+              </h3>
+            </li>
+            <li>
+              <input
+                class="footer-contact-input"
+                type="text"
+                placeholder="📱 Enter your phone number"
+              />
+            </li>
+            <li>
+              <button class="footer-contact-button" type="submit">
+                Sign up Now
+              </button>
+            </li>
+          </ul>
+        </div>
+        <p class="copyright">Made With Love By Figmaland All Right Reserved</p>
+      </div>
+    </footer>
+    <!-- #endregion Footer -->
   </body>
 </html>
