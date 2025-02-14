@@ -107,7 +107,12 @@ header .container {
   line-height: 1.75;
   /* positioning */
   display: block;
-  padding: 26px 0;
+  padding: 25px 0;
+  border-bottom: 2px solid #fff;
+}
+.nav-list-link:hover {
+  color: #02897a;
+  border-bottom: 2px solid #02897a;
 }
 
 .auth-list {
@@ -814,6 +819,10 @@ header .container {
 .footer-nav-resurce a,
 .footer-nav-legal a {
   display: block;
+}
+.footer-nav-resurce a:hover,
+.footer-nav-legal a:hover {
+  color: #02897a;
 }
 
 .footer-nav-resurce li,
