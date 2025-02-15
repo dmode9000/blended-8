@@ -5,6 +5,9 @@ body {
   color: #22343d;
 }
 
+img {
+  display: block;
+}
 /* reset list style */
 ol,
 ul {
@@ -134,7 +137,7 @@ button {
   transition: box-shadow 0.3s ease-in-out;
 }
 button:hover {
-  box-shadow: 2px 2px 10px 0 rgba(23, 58, 86, 0.35);
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.35);
 }
 
 .sign-in-btn {
@@ -563,7 +566,7 @@ button:hover {
 
 /* #region: Price Section */
 .price-sect {
-  padding-top: 89px;
+  padding-top: 85px;
   padding-bottom: 50px;
   text-align: center;
 }
@@ -574,11 +577,13 @@ button:hover {
   font-size: 34px;
   color: #22343d;
   margin-bottom: 10px;
+  line-height: 1.5;
 }
 .price-sect-text {
   font-weight: 500;
   color: #22343d;
   margin-bottom: 40px;
+  line-height: 1.5;
 }
 .price-sect-list {
   font-family: 'Montserrat', sans-serif;
@@ -677,7 +682,11 @@ button:hover {
 
 /* #region: Opinions Section */
 * {
-  /* outline: 1px solid #02897a; */
+  /* debug styles */
+  /* outline: 1px solid #02897a !important; */
+  /* background-color: hsl(50 100% 50% / 0.1) !important; */
+  /* box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.5) !important; */
+  /* color: hsla(0, 0%, 0%, 0.49) !important; */
 }
 .opinions-sect {
   padding-top: 50px;
@@ -877,8 +886,402 @@ button:hover {
 
 .copyright {
   width: 500px;
+  text-align: center;
   margin: 0 auto;
   line-height: 1.875;
   color: #22343d;
 }
 /* #endregion: Footer */
+
+/* #region: customers.html ------------------------------------ */
+/* #region: Our Clients section */
+.clients-sect {
+  padding-bottom: 117px;
+  padding-top: 100px;
+}
+.clients-sect .container {
+  text-align: center;
+}
+.clients-title {
+  font-weight: 700;
+  font-size: 40px;
+  color: #22343d;
+  margin-bottom: 50px;
+}
+.clients-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 64px;
+  height: 82px;
+}
+/* Why Choose section */
+.whychoose-sect {
+  padding-top: 24px;
+  padding-bottom: 68px;
+  background: #f5f5f5;
+}
+.whychoose-sect .container {
+}
+.whychoose-title {
+  font-weight: 700;
+  font-size: 34px;
+  text-align: center;
+  line-height: 1.5;
+  color: #22343d;
+  margin-bottom: 50px;
+}
+.whychoose-list {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.whychoose-item {
+  border: 1px solid #dedede;
+  border-radius: 10px;
+  padding: 40px 50px;
+  min-width: calc((100% - 30px * 2) / 3);
+  min-height: 305px;
+  padding: 32px 0px 34px;
+}
+.whychoose-item * {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.whychoose-item .rounded-rect {
+  margin-bottom: 32px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+.whychoose-item:nth-child(1) .rounded-rect {
+  background-color: #02897a;
+}
+.whychoose-item:nth-child(2) .rounded-rect {
+  background-color: #4d8dff;
+}
+.whychoose-item:nth-child(3) .rounded-rect {
+  background-color: #f03e3d;
+}
+.whychoose-item-title {
+  font-weight: 700;
+  font-size: 24px;
+
+  /* line-height: 33px; */
+  line-height: 1.375;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #22343d;
+  padding: 0 16px;
+  margin-bottom: 16px;
+}
+.whychoose-item-text {
+  line-height: 1.69;
+  letter-spacing: 0.01em;
+  text-align: center;
+  color: #22343d;
+  padding: 0 36px;
+}
+/* #endregion: Our Clients section */
+
+/* #region: How Work section */
+.howwork-sect {
+  padding-top: 100px;
+  padding-bottom: 115px;
+}
+.howwork-sect .container {
+}
+.howwork-sect-title {
+  font-weight: 700;
+  font-size: 34px;
+  text-align: center;
+  color: #22343d;
+  margin-bottom: 73px;
+}
+.howwork-sect-list {
+  margin: 0 auto 77px;
+}
+.howwork-list-item {
+  display: flex;
+  max-width: 1021px;
+  margin-bottom: 100px;
+  gap: 89px;
+}
+.howwork-list-item:last-child {
+  margin-bottom: 0;
+}
+.howwork-list-item:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.howwork-item-image {
+}
+.howwork-item-part {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+}
+.howwork-item-step {
+  font-weight: 500;
+  font-size: 20px;
+  color: #22343d;
+}
+.howwork-item-title {
+  font-weight: 600;
+  font-size: 24px;
+  color: #22343d;
+}
+.howwork-item-text {
+  font-weight: 400;
+  font-size: 16px;
+
+  /* line-height: 28px; */
+  line-height: 1.75;
+  color: #22343d;
+}
+.howwork-sect-btn {
+  color: #fff;
+  background: #02897a;
+  border: 0;
+  border-radius: 8px;
+  height: 44px;
+  display: block;
+  padding: 0px 18px;
+  margin: 0 auto;
+}
+/* #endregion: How Work section */
+
+/* #region: Join1000 section */
+.join1000-sect {
+  background: linear-gradient(180deg, #f5f5f5 0%, rgba(245, 245, 245, 0) 100%);
+  padding: 35px 0 45px;
+}
+.join1000-sect .container {
+}
+.join1000-sect-title {
+  margin: 0 auto;
+  max-width: 540px;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.5;
+  text-align: center;
+  color: #22343d;
+  margin-bottom: 93px;
+}
+.join1000-sect-list {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+.join1000-list-item {
+  display: block;
+  width: 380px;
+}
+.join1000-list-item * {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+.join1000-list-item-image {
+  margin-bottom: 27px;
+}
+.join1000-list-item-title {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.17;
+  color: #000;
+  margin-bottom: 16px;
+}
+.join1000-list-item-textframe {
+  font-size: 18px;
+  line-height: 1.78;
+  text-align: center;
+  color: #22343d;
+  margin-bottom: 12px;
+}
+
+.join1000-list-item-text {
+  font-weight: 500;
+  line-height: 1.75;
+  color: #000;
+}
+/* #endregion: Join1000 section */
+
+.customers-page .promo-sect {
+  padding-top: 150px;
+  padding-bottom: 100px;
+}
+
+/* #endregion: customers.html ----------------------------------*/
+
+/* #region: pricing.html ----------------------------------*/
+/* #region: pricing section */
+.pricing-page .price-sect {
+  padding-top: 50px;
+  padding-bottom: 150px;
+}
+.price-sect-category {
+  font-weight: 600;
+  font-size: 24px;
+  color: #22343d;
+  margin-bottom: 32px;
+}
+.pricing-page .price-sect-title {
+  margin-bottom: 10px;
+}
+.pricing-page .price-sect-text {
+  margin-bottom: 50px;
+}
+/* #endregion: pricing section */
+
+/* #region: customplan section */
+.customplan-sect {
+  background: linear-gradient(180deg, #f6f6f6 0%, rgba(246, 246, 246, 0) 100%);
+  padding-top: 53px;
+  padding-bottom: 51px;
+  text-align: center;
+}
+.customplan-sect .container {
+}
+.customplan-sect-category {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.5;
+  color: #22343d;
+  margin-bottom: 16px;
+}
+.customplan-sect-title {
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 1.5;
+  color: #22343d;
+  margin-bottom: 8px;
+}
+.customplan-sect-text {
+  font-size: 18px;
+  line-height: 1.5;
+  color: #22343d;
+  margin-bottom: 32px;
+}
+.customplan-sect-btn {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.22;
+  color: #fff;
+  background: #02897a;
+  border: 0;
+  border-radius: 8px;
+  width: 224px;
+  height: 44px;
+}
+/* #endregion: customplan section */
+
+/* #region: effects section */
+.effects-sect {
+}
+.effects-sect .container {
+  padding-top: 294px;
+}
+.effects-sect-cont {
+  display: flex;
+  gap: 60px;
+}
+.effects-sect-image {
+  margin-top: 24px;
+}
+.effects-sect-title {
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 1.5;
+  color: #22343d;
+  text-align: center;
+  margin-bottom: 56px;
+}
+.effects-sect-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 32px;
+}
+.effects-sect-list-item {
+}
+.effects-sect-list-item-part {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 16px;
+}
+.effects-sect-list-item-icon {
+}
+.effects-sect-list-item-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.5;
+  color: #22343d;
+}
+.effects-sect-list-item-text {
+  line-height: 1.75;
+  color: #22343d;
+}
+/* #endregion: effects section */
+
+/* #region: FAQ section */
+.faq-sect {
+  padding-bottom: 75px;
+}
+.faq-sect .container {
+}
+.faq-sect-title {
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 1.5;
+  color: #22343d;
+  margin-bottom: 8px;
+  text-align: center;
+}
+.faq-sect-text {
+  font-size: 18px;
+  line-height: 1.5;
+  color: #22343d;
+  margin-bottom: 50px;
+  text-align: center;
+}
+.faq-sect-list {
+}
+.faq-sect-list-item {
+  padding-top: 17px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #e7e7e7;
+}
+.faq-sect-list-item:first-child {
+  padding-top: 0px;
+}
+.faq-sect-list-item-cont {
+  display: flex;
+  align-items: center;
+}
+.faq-sect-list-item-icon {
+  margin-right: 16px;
+}
+.faq-sect-list-item-title {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #22343d;
+}
+.faq-sect-list-item-text {
+  line-height: 1.5;
+  color: #22343d;
+  padding-top: 14px;
+}
+/* #endregion: FAQ section */
+
+/* #region: join100 section */
+.pricing-page .promo-sect {
+  padding-top: 75px;
+  padding-bottom: 100px;
+}
+/* #endregion: join100 section */
+
+/* #endregion: pricing.html ----------------------------------*/
