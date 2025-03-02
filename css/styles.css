@@ -3,10 +3,13 @@
 body {
   font-family: 'Poppins', sans-serif;
   color: #22343d;
+  background-color: #fff;
 }
 
 img {
   display: block;
+  /* width: 100%; */
+  /* height: auto; */
 }
 /* reset list style */
 ol,
@@ -117,6 +120,7 @@ header .container {
 .nav-list-link:hover {
   color: #02897a;
   border-bottom: 1px solid #02897a;
+  font-weight: 600;
 }
 
 .auth-list {
@@ -165,6 +169,7 @@ button:hover {
 .hero-sect > .container {
   /* flex positioning */
   display: flex;
+  gap: 35px;
 }
 
 .hero-lp-title {
@@ -238,6 +243,10 @@ button:hover {
   flex-direction: column;
   justify-content: center;
   /* gap: 50px; */
+}
+.product-sect-icons {
+  fill: #fff;
+  transform: ;
 }
 .product-title {
   color: #22343d;
@@ -389,16 +398,18 @@ button:hover {
   min-width: 450px;
 }
 .tick-rectangle {
-  min-width: 35px;
-  min-height: 35px;
-  border: 2.92px solid #fff;
-  border-radius: 14px;
+  min-width: 40px;
+  min-height: 40px;
+  background-color: #edfffc;
+  /* border: 2.92px solid #fff; */
+  border-radius: 50%;
   /* inner tick symbol positioning */
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 18px;
   color: #fff;
+  transition: background-color 200ms ease-in-out;
 }
 /* #endregion: Management Section */
 
@@ -771,8 +782,10 @@ button:hover {
 .promo-sect-button {
   border-radius: 8px;
   border: 0;
-  width: 150px;
-  height: 50px;
+  min-width: 150px;
+  line-height: 1.5;
+  padding: 10px;
+  /* height: 50px; */
   background: #fff;
   font-weight: 600;
   font-size: 20px;
@@ -791,7 +804,7 @@ button:hover {
 .footer-horisontal-cont {
   display: flex;
   align-items: flex-start;
-  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .footer-logo-cont {
@@ -816,6 +829,16 @@ button:hover {
   gap: 16px;
 }
 
+.footer-social-link {
+}
+
+.footer-social-link:hover .tick-rectangle {
+  background-color: #02897a;
+}
+.footer-social-link:hover .footer-social-icons {
+  stroke: white;
+}
+
 .footer-elastic {
   flex-grow: 1;
 }
@@ -829,8 +852,7 @@ button:hover {
   color: #22343d;
 }
 
-.footer-nav-resurce h3,
-.footer-nav-legal h3 {
+.footer-nav-title {
   font-weight: 500;
   font-size: 20px;
   line-height: 2.2;
@@ -874,8 +896,10 @@ button:hover {
 }
 
 .footer-contact-button {
-  width: 131px;
-  height: 39px;
+  min-width: 131px;
+  /* height: 39px; */
+  line-height: 1.5;
+  padding: 8px;
   border: 0;
   border-radius: 4px;
   background: #02897a;
@@ -891,6 +915,13 @@ button:hover {
   line-height: 1.875;
   color: #22343d;
 }
+
+.footer-social-icons {
+  stroke: #02897a;
+  fill: transparent;
+  transition: stroke 200ms ease-in-out;
+}
+
 /* #endregion: Footer */
 
 /* #region: customers.html ------------------------------------ */
@@ -1004,11 +1035,11 @@ button:hover {
 .howwork-list-item {
   display: flex;
   max-width: 1021px;
-  margin-bottom: 100px;
+  /* margin-bottom: 100px; */
   gap: 89px;
 }
-.howwork-list-item:last-child {
-  margin-bottom: 0;
+.howwork-list-item:not(:last-child) {
+  margin-bottom: 100px;
 }
 .howwork-list-item:nth-child(even) {
   flex-direction: row-reverse;
@@ -1049,6 +1080,9 @@ button:hover {
   display: block;
   padding: 0px 18px;
   margin: 0 auto;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.22;
 }
 /* #endregion: How Work section */
 
