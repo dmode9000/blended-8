@@ -32,11 +32,16 @@
             class="logo-image"
             src="./images/logo.png"
             alt="Logo P Product"
-            width="39"
+            width="40"
             height="36"
           />
           Product
         </a>
+        <button class="mobile-menu-btn" type="button">
+          <svg class="mobile-menu-btn-icon" width="28" height="31">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
         <nav class="nav-block">
           <ul class="nav-list">
             <li>
@@ -77,32 +82,24 @@
               </li>
               <li>
                 <button class="watchvideo-btn" type="button">
-                  <svg
-                    width="16"
-                    height="18"
-                    viewBox="0 0 16 18"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
-                      d="M14.6745 7.25119C16.0473 8.01295 16.0473 9.98705 14.6745 10.7488L2.77492 17.3518C1.44188 18.0914 -0.195475 17.1275 -0.195475 15.6029V2.39705C-0.195475 0.872535 1.44188 -0.0914478 2.77492 0.648247L14.6745 7.25119Z"
-                      fill="#02897A"
-                    />
+                  <svg width="16" height="18" class="watchvideo-btn-icon">
+                    <use href="./images/icons.svg#icon-triangle" />
                   </svg>
                   Watch the Video
                 </button>
               </li>
             </ul>
           </div>
-          <img src="./images/hero/hero.png" alt="hero" width="540" />
+          <svg class="hero-svg-image">
+            <use href="./images/hero/hero.svg#icon-amico"></use>
+          </svg>
+          <!-- <img src="./images/hero/hero.png" alt="hero" width="540" /> -->
         </div>
       </section>
       <!-- #endregion Hero section -->
 
       <!-- #region Product section-->
-      <section class="product-sect">
+      <section class="product-sect hidden">
         <div class="container">
           <h2 class="product-title">Product was Built Specifically for You</h2>
           <ul class="product-list">
@@ -157,7 +154,7 @@
       <!-- #endregion Product section-->
 
       <!-- #region Management section -->
-      <section class="management-sect">
+      <section class="management-sect hidden">
         <div class="container">
           <div class="section-side-part">
             <ul class="manag-sect-list">
@@ -197,7 +194,7 @@
       <!-- #endregion Management section -->
 
       <!-- #region Support section -->
-      <section class="support-sect">
+      <section class="support-sect hidden">
         <div class="container">
           <img src="./images/support/support.png" alt="suport" />
           <div class="section-side-part">
@@ -236,7 +233,7 @@
       <!-- #endregion Support section -->
 
       <!-- #region Optimisation for Collaborative section -->
-      <section class="optimisation-sect">
+      <section class="optimisation-sect hidden">
         <div class="container">
           <ul class="optimisation-sect-list">
             <li>
@@ -273,7 +270,7 @@
       <!-- #endregion Optimisation for Collaborative -->
 
       <!-- #region Quick & Easy Process section -->
-      <section class="process-sect">
+      <section class="process-sect hidden">
         <div class="container">
           <h2 class="process-sect-title">Quick & Easy Process</h2>
           <p class="process-sect-text">
@@ -336,7 +333,7 @@
       <!-- #endregion Quick & Easy Process section -->
 
       <!-- #region Contents Strategies section -->
-      <section class="strategies-sect">
+      <section class="strategies-sect hidden">
         <div class="container">
           <h2 class="strategies-sect-title">Contents Strategies</h2>
           <p class="strategies-sect-text">
@@ -396,7 +393,7 @@
       <!-- #endregion Contents Strategies section -->
 
       <!-- #region Price section -->
-      <section class="price-sect">
+      <section class="price-sect hidden">
         <div class="container">
           <h2 class="price-sect-title">Price Table</h2>
           <p class="price-sect-text">We offer competitive price</p>
@@ -458,7 +455,7 @@
       <!-- #endregion Price section -->
 
       <!-- #region Opinions -->
-      <section class="opinions-sect">
+      <section class="opinions-sect hidden">
         <div class="container">
           <h2 class="opinion-title">What Clients Say</h2>
           <p class="opinion-text">
@@ -529,7 +526,7 @@
       <!-- #endregion What Client Say -->
 
       <!-- #region Promo Join100 -->
-      <section class="promo-sect">
+      <section class="promo-sect hidden">
         <div class="container">
           <div>
             <h2 class="promo-sect-title">
@@ -545,7 +542,7 @@
     <!-- #endregion Main -->
 
     <!-- #region Footer -->
-    <footer class="footer">
+    <footer class="footer hidden">
       <div class="container">
         <div class="footer-horisontal-cont">
           <div>
